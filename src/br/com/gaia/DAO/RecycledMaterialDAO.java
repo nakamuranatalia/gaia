@@ -5,6 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.List;
 
 import br.com.gaia.model.RecycledMaterial;
 
@@ -106,8 +107,8 @@ public class RecycledMaterialDAO {
 
 	}
 
-	public ArrayList<RecycledMaterial> readAll() {
-		ArrayList<RecycledMaterial> recycledMaterialArray = new ArrayList<>();
+	public List<RecycledMaterial> readAll() {
+		List<RecycledMaterial> recycledMaterialArray = new ArrayList<>();
 		String read = "SELECT recycled_material_name FROM gaia.recycled_material";
 
 		try (PreparedStatement pst = connection.prepareStatement(read)) {
