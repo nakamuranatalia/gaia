@@ -5,11 +5,16 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+
 import br.com.gaia.model.RecycledMaterial;
 
 public class RecycledMaterialDAO {
 
-	private Connection connection = ConnectionFactory.getConnection();
+	private Connection connection;
+	
+	public RecycledMaterialDAO() {
+		this.connection = ConnectionFactory.getConnection();
+	}
 
 	public boolean create(RecycledMaterial recycledMaterial) {
 
