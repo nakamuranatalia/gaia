@@ -104,7 +104,7 @@ public class RecyclingIdeasDAO {
 			pst.setString(1, material);
 			ResultSet result = pst.executeQuery();
 			
-			List<RecyclingIdeas> rArray = new ArrayList<RecyclingIdeas>();
+			List<RecyclingIdeas> rArray = new ArrayList<>();
 			while (result.next()) {
 				RecyclingIdeas recyclingIdeas = new RecyclingIdeas();
 				RecycledMaterial recycledMaterial = new RecycledMaterial();
