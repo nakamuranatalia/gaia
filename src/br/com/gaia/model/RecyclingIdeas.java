@@ -1,7 +1,5 @@
 package br.com.gaia.model;
 
-import br.com.gaia.model.RecycledMaterial;
-
 public class RecyclingIdeas{
 	
 	private int identifierCd;

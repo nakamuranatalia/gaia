@@ -1,6 +1,5 @@
 package br.com.gaia.model;
 
-import br.com.gaia.model.Position;
 import java.io.Serializable;
 
 public class Gaia implements Serializable{
