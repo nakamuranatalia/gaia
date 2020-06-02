@@ -1,6 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-    
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <!DOCTYPE html>
@@ -92,36 +90,6 @@
            C404.884,284.695,407.13,279.471,405.293,274.868z"/>
    </g>
 </g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
                </svg>
             </a>
 
@@ -204,33 +172,35 @@
                 <div class="col-lg-8 text-center">
                     <h2 class="font_black mt-0"><b class="grand_hotel font-50 font-weight-normal color_light">About</b> us!</h2>
                     <hr class="divider border_light my-4" />
-
+					<p class="text-colletion-points text-center">
+              			  We are a team really concerned with:
+            		</p><br>
                     <div class="row">
                         <div class="col-3">
                             <img src="../assets/img/icones/arvore-gradient.PNG">
                             <p>
-                                Concerned with nature
+                                Nature
                             </p>
                         </div>
                         <div class="col-3">
                             <img src="../assets/img/icones/saude-gradient.PNG" style="margin-bottom: 9px;">
                             <p>
-                                your health
+                                Your health
                             </p>
                         </div>
                         <div class="col-3">
                             <img src="../assets/img/icones/pata-gradient.PNG">
                             <p>
-                                the animals
+                                The animals
                             </p>
                         </div>
                         <div class="col-3">
                             <img src="../assets/img/icones/globo-gradient.PNG">
                             <p>
-                                and the world!
+                                And the world!
                             </p>
                         </div>
-                    </div>
+                    </div><br>
                     <div class="row">
                         <div class="col-lg-12 align-self-baseline">
                             <a class="btn btn-gradient btn-xl js-scroll-trigger" href="about.jsp">MORE INFO</a>
@@ -266,8 +236,6 @@
         <div class="container-fluid p-0">
             <div class="row no-gutters">
                 <div class="col">
-                    <a class="portfolio-box" href="../assets/img/paper -274x206-azul.jpg">
-
                         <div class="flip-container">
                             <div class="flipper">
                                 <div class="front">
@@ -278,12 +246,14 @@
                                     <div class="portfolio-box-caption confg_back">
                                         <div class="project-category text-white-50">PAPER</div>
                                         <div class="project-name">Recipes with Paper</div>
+                                        <form method="get" action="../../FrontController.do">
+											<input type="hidden" name="command" value="ReadPaper">
+											<input type="submit">
+										</form> 
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                    </a>
+                        </div>  
                 </div>
                 <div class="col">
                     <a class="portfolio-box" href="../assets/img/plastic-274x206-azul.jpg">
