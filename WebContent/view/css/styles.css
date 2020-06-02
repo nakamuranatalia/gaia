@@ -595,7 +595,8 @@ pre code {
 
 @font-face {
     font-family: Artesana;
-    src: url(../fonts/artesana/Artesana.otf);
+    src: url(view/fonts/artesana/Artesana.otf),
+    	 url(../fonts/artesana/Artesana.otf) ;
 }
 
 .artesana {
@@ -604,7 +605,8 @@ pre code {
 
 @font-face {
     font-family: Grand Hotel;
-    src: url(../fonts/grand-hotel/GrandHotel-Regular.otf);
+    src: url(view/fonts/grand-hotel/GrandHotel-Regular.otf),
+    	 url(../fonts/grand-hotel/GrandHotel-Regular.otf);
 }
 
 .grand_hotel {
@@ -692,22 +694,13 @@ section#services {
     background-size: cover;
 }
 
-.text-colletion-points {
+.text-colletion-points,
+.text-about-us {
     padding-top: 10px;
     padding-bottom: 10px;
     font-style: italic;
     font-size: 18px;
 }
-
-
-/* .pelicula-azul {
-    background: #106492;
-    width: 270px;
-    height: 203px;
-    opacity: 35%;
-    position: absolute;
-    z-index: 99;
-} */
 
 .flip-container {
     width: auto;
