@@ -215,7 +215,10 @@
             </p>
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <a class="btn btn-gradient btn-xl js-scroll-trigger" href="map/address.jsp">FIND COLLECTION POINTS</a>
+                <form method="get" action="../../FrontController.do">
+                	<input type="hidden" name="command" value="AddressCommand">
+                    <button class="btn btn-gradient btn-xl js-scroll-trigger" type="submit" >FIND COLLECTION POINTS</button>
+                </form>
                 </div>
             </div>
         </div>
