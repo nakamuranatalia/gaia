@@ -14,12 +14,12 @@ import br.com.gaia.service.RecyclingIdeasService;
 public class ReadPaperCommand implements Command{
 
 	private RecyclingIdeasService service = new RecyclingIdeasService();
-	private List<RecyclingIdeas> list = new ArrayList<>();
+	private List<RecyclingIdeas> recyclingIdeasList = new ArrayList<>();
 	
 	@Override
 	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		list = service.read("paper");
-		request.setAttribute("paperList", list);
+		recyclingIdeasList = service.read("paper");
+		request.setAttribute("paperList", recyclingIdeasList);
 		request.getRequestDispatcher("view/jsp/recycling-ideas/recycling-ideas-list-paper.jsp").forward(request, response);
 	}
 }
