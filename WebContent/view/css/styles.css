@@ -596,7 +596,8 @@ pre code {
 @font-face {
     font-family: Artesana;
     src: url(view/fonts/artesana/Artesana.otf),
-    	 url(../fonts/artesana/Artesana.otf) ;
+    	 url(../fonts/artesana/Artesana.otf),
+    	 url(../../fonts/artesana/Artesana.otf);
 }
 
 .artesana {
@@ -606,7 +607,8 @@ pre code {
 @font-face {
     font-family: Grand Hotel;
     src: url(view/fonts/grand-hotel/GrandHotel-Regular.otf),
-    	 url(../fonts/grand-hotel/GrandHotel-Regular.otf);
+    	 url(../fonts/grand-hotel/GrandHotel-Regular.otf),
+    	 url(../../fonts/grand-hotel/GrandHotel-Regular.otf);
 }
 
 .grand_hotel {
