@@ -234,6 +234,9 @@
         <div class="container-fluid p-0">
             <div class="row no-gutters">
                 <div class="col">
+                	<form method="get" action="../../FrontController.do">           
+                     	<input type="hidden" name="command" value="ReadPaperIdeasCommand">
+                        <button class="btn-image" type="submit">
                         <div class="flip-container">
                             <div class="flipper">
                                 <div class="front">
@@ -244,18 +247,18 @@
                                     <div class="portfolio-box-caption confg_back">
                                         <div class="project-category text-white-50">PAPER</div>
                                         <div class="project-name">Recipes with Paper</div>
-                                        <form method="get" action="../../FrontController.do">
-											<input type="hidden" name="command" value="ReadPaperCommand">
-											<input type="submit">
-										</form> 
                                     </div>
                                 </div>
                             </div>
                         </div>  
+                   		</button>
+                   </form>  
                 </div>
+                
                 <div class="col">
-                    <a class="portfolio-box" href="../assets/img/plastic-274x206-azul.jpg">
-
+                	<form method="get" action="../../FrontController.do">           
+                     	<input type="hidden" name="command" value="ReadPlasticIdeasCommand">
+                        <button class="btn-image" type="submit">
                         <div class="flip-container">
                             <div class="flipper">
                                 <div class="front">
@@ -269,13 +272,15 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                    </a>
+                        </div>  
+                   		</button>
+                   </form>  
                 </div>
+                
                 <div class="col">
-                    <a class="portfolio-box" href="../assets/img/metal-274x206-azul.jpg">
-
+                	<form method="get" action="../../FrontController.do">           
+                     	<input type="hidden" name="command" value="ReadMetalIdeasCommand">
+                        <button class="btn-image" type="submit">
                         <div class="flip-container">
                             <div class="flipper">
                                 <div class="front">
@@ -289,13 +294,15 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                    </a>
+                        </div>  
+                   		</button>
+                   </form>  
                 </div>
+                
                 <div class="col">
-                    <a class="portfolio-box" href="../assets/img/glass274x206-azul.jpg">
-
+                	<form method="get" action="../../FrontController.do">           
+                     	<input type="hidden" name="command" value="ReadGlassIdeasCommand">
+                        <button class="btn-image" type="submit">
                         <div class="flip-container">
                             <div class="flipper">
                                 <div class="front">
@@ -309,13 +316,15 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                    </a>
+                        </div>  
+                   		</button>
+                   </form>
                 </div>
+                
                 <div class="col">
-                    <a class="portfolio-box" href="recycling-ideas/recycling-ideas-search.jsp">
-
+                	<form method="get" action="../../FrontController.do">           
+                     	<input type="hidden" name="command" value="SearchIdeasCommand">
+                        <button class="btn-image" type="submit">
                         <div class="flip-container">
                             <div class="flipper">
                                 <div class="front">
@@ -329,10 +338,11 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                    </a>
+                        </div>  
+                   		</button>
+                   </form>
                 </div>
+                
             </div>
         </div>
     </section>
