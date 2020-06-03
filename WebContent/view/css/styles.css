@@ -593,6 +593,14 @@ pre code {
 
 /* Minhas Alterações */
 
+.btn-image{
+	border: none !important;
+	background: transparent !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	display: contents !important;
+}
+
 @font-face {
     font-family: Artesana;
     src: url(view/fonts/artesana/Artesana.otf),
