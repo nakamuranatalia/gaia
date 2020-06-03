@@ -1,7 +1,7 @@
 <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light py-3 animate__animated animate__fadeInDown" id="mainNav">
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger artesana color_light font-30" href="../index.jsp">GAIA
+            <a class="navbar-brand js-scroll-trigger artesana color_light font-30" href="/gaia/view/jsp/index.jsp">GAIA
 
                 <svg class="fill_light margin-l-15-n width-50" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
     viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve">
@@ -68,23 +68,21 @@
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto my-2 my-lg-0">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger font_black" href="../index.jsp">Home Page</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger font_black" href="/gaia/view/jsp/index.jsp">Home Page</a></li>
                     <li class="nav-item">
                         <div class="dropdown">
                             <button class="btn nav-link js-scroll-trigger dropdownMenu  font_black" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Services
                             </button>
                             <div class="dropdown-menu options_dropdown" aria-labelledby="dropdownMenu2">
-                                <button class="dropdown-item back_drop" type="button" href="../map/address.jsp">
-                                    <a class="link_dropdown_button js-scroll-trigger" href="../map/address.jsp">
-                                        Colletion Points
-                                    </a>
-                                </button>
-                                <button class="dropdown-item back_drop" type="button" href="../recycling-ideas/recycling-ideas-search.jsp">
-                                    <a class="link_dropdown_button js-scroll-trigger" href="../recycling-ideas/recycling-ideas-search.jsp">
-                                        Recycling Recipes
-                                    </a>
-                                </button>
+                               <form method="get" action="FrontController.do">
+                            		<input type="hidden" name="command" value="AddressCommand">
+	                                <button class="dropdown-item back_drop text-white" type="submit">Collection points</button>
+                                </form>
+                                <form method="get" action="FrontController.do">
+                            		<input type="hidden" name="command" value="SearchIdeasCommand">
+	                                <button class="dropdown-item back_drop text-white" type="submit">Recycling Recipes</button>
+                                </form>
                             </div>
                         </div>
                     </li>
