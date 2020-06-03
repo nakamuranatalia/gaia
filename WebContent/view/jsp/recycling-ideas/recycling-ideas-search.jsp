@@ -26,24 +26,22 @@
                     </div>
 
                     <div class="col-lg-8 align-self-start">
-                        <form action="recyclingIdeasSearch.do" method="post">
+                        <form action="/gaia/FrontController.do" method="get">
                             <div class="form-row">
                                 <div class="form-group col-md-4">
                                 </div>
                                 <div class="form-group col-md-4 text-center">
                                     <label class="font_black" for="inputMaterial">Main material</label>
                                     <select id="inputMaterial" name="material" class="form-control border_light">
-                                        <option value="anything">Anything</option>
-                                        <option value="- Paper">Paper</option>
-                                        <option value="- Plastic">Plastic</option>
-                                        <option value="- Metal">Metal</option>
-                                        <option value="- Glass">Glass</option>
-                                </select>
+                                        <option></option>  
+                                       <c:forEach items="${allRecycledMaterials}"  var="recycled">
+	                                		<option value="${recycled.name}">${recycled.name}</option>       
+	                                	</c:forEach> 
+                                    </select>
                                 </div>
-
                             </div>
-
                             <div class="col-lg-12 text-center">
+                            	<input type="hidden" name="command" value="ReadAllIdeasCommand">
                                 <input type="submit" class="btn btn-gradient btn-find padding-btn" id="btn_find" value="SEARCH">
                             </div>
                         </form>
