@@ -103,16 +103,14 @@
                                 Services
                             </button>
                             <div class="dropdown-menu options_dropdown" aria-labelledby="dropdownMenu2">
-                                <button class="dropdown-item back_drop" type="button" href="map/address.jsp">
-                                    <a class="link_dropdown_button js-scroll-trigger" href="map/address.jsp">
-                                        Colletion Points
-                                    </a>
-                                </button>
-                                <button class="dropdown-item back_drop" type="button" href="recycling-ideas/recycling-ideas-search.jsp">
-                                    <a class="link_dropdown_button js-scroll-trigger" href="recycling-ideas/recycling-ideas-search.jsp">
-                                        Recycling Recipes
-                                    </a>
-                                </button>
+                            	<form method="get" action="../../FrontController.do">
+                            		<input type="hidden" name="command" value="AddressCommand">
+	                                <button class="dropdown-item back_drop text-white" type="submit">Collection points</button>
+                                </form>
+                                <form method="get" action="../../FrontController.do">
+                            		<input type="hidden" name="command" value="SearchIdeasCommand">
+	                                <button class="dropdown-item back_drop text-white" type="submit">Recycling Recipes</button>
+                                </form>
                             </div>
                         </div>
                     </li>
@@ -123,11 +121,10 @@
                                 Management
                             </button>
                             <div class="dropdown-menu options_dropdown" aria-labelledby="dropdownMenu2">
-                                <button class="dropdown-item back_drop" type="button">
-                                    <a class="link_dropdown_button" href="recycling-ideas/recycling-ideas-create.jsp">
-                                        Create Recipes
-                                    </a>
-                                </button>
+                                <form method="get" action="../../FrontController.do">
+                            		<input type="hidden" name="command" value="CreateRecipeFormCommand">
+	                                <button class="dropdown-item back_drop text-white" type="submit">Create Recipes</button>
+                                </form>
                                 <button class="dropdown-item back_drop" type="button">
                                     <a class="link_dropdown_button" href="recycling-ideas/recycling-ideas-update.jsp">
                                        Update Recipes
