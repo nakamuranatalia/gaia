@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import br.com.gaia.model.RecyclingIdeas;
 import br.com.gaia.service.RecyclingIdeasService;
 
-public class ReadPaperCommand implements Command{
+public class ReadPaperIdeasCommand implements Command{
 
 	private RecyclingIdeasService service = new RecyclingIdeasService();
 	private List<RecyclingIdeas> recyclingIdeasList = new ArrayList<>();
