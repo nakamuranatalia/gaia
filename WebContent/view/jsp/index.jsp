@@ -247,7 +247,7 @@
                                         <div class="project-category text-white-50">PAPER</div>
                                         <div class="project-name">Recipes with Paper</div>
                                         <form method="get" action="../../FrontController.do">
-											<input type="hidden" name="command" value="ReadPaper">
+											<input type="hidden" name="command" value="ReadPaperCommand">
 											<input type="submit">
 										</form> 
                                     </div>
