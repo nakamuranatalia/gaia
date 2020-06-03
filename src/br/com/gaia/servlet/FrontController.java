@@ -28,7 +28,7 @@ public class FrontController extends HttpServlet {
 
 	protected void doExecute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		try {
-			Command command = (Command)Class.forName("command."+request.getParameter("command")).getDeclaredConstructor().newInstance();
+			Command command = (Command)Class.forName("br.com.gaia.command."+request.getParameter("command")).getDeclaredConstructor().newInstance();
 			command.execute(request, response);
 		} catch (Exception e) {
 			e.printStackTrace();
