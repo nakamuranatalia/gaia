@@ -28,7 +28,7 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light py-3 animate__animated animate__fadeInDown" id="mainNav">
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger artesana color_light font-30" href="/index.jsp">GAIA
+            <a class="navbar-brand js-scroll-trigger artesana color_light font-30" href="index.jsp">GAIA
 
                 <svg class="fill_light margin-l-15-n width-50" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
     viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve">
@@ -126,11 +126,6 @@
                                 <button class="dropdown-item back_drop" type="button">
                                     <a class="link_dropdown_button" href="recycling-ideas/recycling-ideas-create.jsp">
                                         Create Recipes
-                                    </a>
-                                </button>
-                                <button class="dropdown-item back_drop" type="button">
-                                    <a class="link_dropdown_button" href="recycling-ideas/recycling-ideas-search.jsp">
-                                        Search for Recipes
                                     </a>
                                 </button>
                                 <button class="dropdown-item back_drop" type="button">
