@@ -21,25 +21,24 @@
                         <hr class="divider border_light my-4" />
                     </div>
                     <div class="col-lg-8 align-self-start">
-                        <form action="Search.do" method="post">
+                        <form action="/gaia/FrontController.do" method="get">
                             <div class="form-row">
                                 <div class="form-group col-md-4">
                                 </div>
                                 <div class="form-group col-md-4 text-center">
                                     <label class="font_black" for="inputMaterial">Material</label>
                                     <select id="inputMaterial" name="material" class="form-control border_light">
-                                            <option value="anything">Anything</option>
-                                            <option value="paper">Paper</option>
-                                            <option value="plastic">Plastic</option>
-                                            <option value="metal">Metal</option>
-                                            <option value="glass">Glass</option>
+                                        <option></option>  
+                                       <c:forEach items="${allRecycledMaterials}"  var="recycled">
+	                                		<option value="${recycled.name}">${recycled.name}</option>       
+	                                	</c:forEach> 
                                     </select>
                                 </div>
 
                             </div>
                             <div class="form-group text-center">
                                 <label class="font_black" for="inputAddress">Address</label>
-                                <input type="text" class="form-control border_light" id="inputAddress" name="address" placeholder="Street Rose Bushes, nº 281" required>
+                                <input type="text" class="form-control border_light" id="inputAddress" name="address" placeholder="Street Rose Bushes" required>
                             </div>
                             <div class="form-group text-center">
                                 <label class="font_black" for="inputAddress2">Neighborhood</label>
@@ -48,11 +47,12 @@
                             <div class="form-row text-center">
                                 <div class="form-group col-md-6">
                                     <label class="font_black" for="inputCity">City</label>
-                                    <input type="text" class="form-control border_light" id="inputCity" name="city" required>
+                                    <input type="text" class="form-control border_light" id="inputCity" name="city" placeholder="New York" required>
                                 </div>
                                 <div class="form-group col-md-3 text-center">
                                     <label class="font_black" for="inputEstado">State</label>
                                     <select id="inputEstado" name="state" class="form-control border_light">
+                                    	<option></option>
                                         <option value="AC">Acre</option>
                                         <option value="AL">Alagoas</option>
                                         <option value="AP">Amapá</option>
@@ -80,17 +80,16 @@
                                         <option value="SP">São Paulo</option>
                                         <option value="SE">Sergipe</option>
                                         <option value="TO">Tocantins</option>
-                                        <option value="EX">Estrangeiro</option>
-                                
                                     </select>
                                 </div>
                                 <div class="form-group col-md-3 text-center">
                                     <label class="font_black" for="inputCEP">CEP</label>
-                                    <input type="text" class="form-control border_light" id="inputCEP" name="cep" required>
+                                    <input type="text" class="form-control border_light" id="inputCEP" name="cep" placeholder="01234567" required>
                                 </div>
                             </div>
                             <div class="col-lg-12 text-center">
-                                <input type="submit" class="btn btn-gradient btn-find padding-btn" id="btn_find" value="FIND">
+                            	<input type="hidden" name="command" value="MapCommand">
+                                <button type="submit" class="btn btn-gradient btn-find padding-btn" id="btn_find">FIND</button>
                             </div>
                         </form>
                     </div>
