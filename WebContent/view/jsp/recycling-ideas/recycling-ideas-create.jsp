@@ -41,19 +41,19 @@
                             </div>
                             <div class="form-group text-center">
                                 <label class="font_black" for="inputCod">Identifier code</label>
-                                <input type="text" class="form-control border_light" id="inputCod" name="code" placeholder="" required>
+                                <input type="text" class="form-control border_light" id="inputCod" name="code" placeholder="100" required>
                             </div>
                             <div class="form-group text-center">
                                 <label class="font_black" for="inputTitle">Title</label>
-                                <input type="text" class="form-control border_light" id="inputTitle" name="title" placeholder="" required>
+                                <input type="text" class="form-control border_light" id="inputTitle" name="title" placeholder="Jewel box" required>
                             </div>
                             <div class="form-group text-center">
                                 <label class="font_black" for="inputIngred">Ingredients</label>
-                                <textarea class="form-control border_light" id="inputIngred" rows="5" name="ingredients" required></textarea>
+                                <textarea class="form-control border_light" id="inputIngred" rows="5" name="ingredients" placeholder="-Ingredient 01 &#10;-Ingredient 02 &#10;-Ingredient 03" required></textarea>
                             </div>
                             <div class="form-group text-center">
                                 <label class="font_black" for="inputText">Setp by step</label>
-                                <textarea class="form-control border_light" id="inputText" rows="20" name="step" required></textarea>
+                                <textarea class="form-control border_light" id="inputText" rows="20" name="step" placeholder="-Step 01 &#10;-Step 02 &#10;-Step 03" required></textarea>
                             </div>
                             <div class="col-lg-12 text-center">
                             	<input type="hidden" name="command" value="CreateRecipeCommand">
