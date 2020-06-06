@@ -52,7 +52,7 @@
                                 <textarea class="form-control border_light" id="inputIngred" rows="5" name="ingredients" placeholder="-Ingredient 01 &#10;-Ingredient 02 &#10;-Ingredient 03" required></textarea>
                             </div>
                             <div class="form-group text-center">
-                                <label class="font_black" for="inputText">Setp by step</label>
+                                <label class="font_black" for="inputText">Step by step</label>
                                 <textarea class="form-control border_light" id="inputText" rows="20" name="step" placeholder="-Step 01 &#10;-Step 02 &#10;-Step 03" required></textarea>
                             </div>
                             <div class="col-lg-12 text-center">
