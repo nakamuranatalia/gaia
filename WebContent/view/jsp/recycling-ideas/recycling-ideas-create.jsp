@@ -56,7 +56,7 @@
                                 <textarea class="form-control border_light" id="inputText" rows="20" name="step" placeholder="-Step 01 &#10;-Step 02 &#10;-Step 03" required></textarea>
                             </div>
                             <div class="col-lg-12 text-center">
-                            	<input type="hidden" name="command" value="CreateRecipeCommand">
+                            	<input type="hidden" name="command" value="CreateIdeasCommand">
                                 <input type="submit" class="btn btn-gradient btn-find padding-btn" id="btn_find" value="REGISTER">
                             </div>
                         </form>
