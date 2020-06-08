@@ -10,7 +10,7 @@ import br.com.gaia.model.RecycledMaterial;
 import br.com.gaia.model.RecyclingIdeas;
 import br.com.gaia.service.RecyclingIdeasService;
 
-public class CreateRecipeCommand implements Command{
+public class CreateIdeasCommand implements Command{
 
 	private RecyclingIdeasService service = new RecyclingIdeasService();
 	
