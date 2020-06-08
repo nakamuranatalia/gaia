@@ -2,22 +2,22 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<!-- Imports -->
     <jsp:include page="../common/imports.jsp" />
 </head>
-
 <body id="page-top">
     <!-- Menu-->
     <jsp:include page="../common/menu.jsp" />
+    <!-- Page -->
     <section class="margin-t-93 padding-t-55 animate__animated animate__fadeIn" id="collection">
         <div class="wrapper">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-10 text-center">
                         <h3 class="text-uppercase font_black font-weight-bold">
-                            Enter your address to find the nearest collection point to you.</h3>
+                            Enter your address to find the nearest collection point to you.
+                        </h3>
                         <hr class="divider border_light my-4" />
                     </div>
                     <div class="col-lg-8 align-self-start">
@@ -28,13 +28,12 @@
                                 <div class="form-group col-md-4 text-center">
                                     <label class="font_black" for="inputMaterial">Material</label>
                                     <select id="inputMaterial" name="material" class="form-control border_light">
-                                        <option></option>  
+                                       <option disabled selected>Select option</option> 
                                        <c:forEach items="${allRecycledMaterials}"  var="recycled">
 	                                		<option value="${recycled.name}">${recycled.name}</option>       
 	                                	</c:forEach> 
                                     </select>
                                 </div>
-
                             </div>
                             <div class="form-group text-center">
                                 <label class="font_black" for="inputAddress">Address</label>
@@ -45,17 +44,17 @@
                                 <input type="text" class="form-control border_light" id="inputAddress2" name="neighborhood" placeholder="Village Park" required>
                             </div>
                             <div class="form-row text-center">
-                                <div class="form-group col-md-6">
+                            	<div class="form-group col-md-6">
                                     <label class="font_black" for="inputCity">City</label>
                                     <input type="text" class="form-control border_light" id="inputCity" name="city" placeholder="New York" required>
                                 </div>
                                 <div class="form-group col-md-3 text-center">
                                     <label class="font_black" for="inputEstado">State</label>
                                     <select id="inputEstado" name="state" class="form-control border_light">
-                                    	<option></option>
+                                    	<option disabled selected>Select option</option>
                                         <option value="AC">Acre</option>
                                         <option value="AL">Alagoas</option>
-                                        <option value="AP">Amapá</option>
+                                        <option value="AC">Amapá</option>
                                         <option value="AM">Amazonas</option>
                                         <option value="BA">Bahia</option>
                                         <option value="CE">Ceará</option>
@@ -85,7 +84,7 @@
                                 <div class="form-group col-md-3 text-center">
                                     <label class="font_black" for="inputCEP">CEP</label>
                                     <input type="text" class="form-control border_light" id="inputCEP" name="cep" placeholder="01234567" required>
-                                </div>
+                            	</div>
                             </div>
                             <div class="col-lg-12 text-center">
                             	<input type="hidden" name="command" value="MapCommand">
@@ -97,9 +96,7 @@
             </div>
         </div>
     </section>
-
     <!-- Footer-->
     <jsp:include page="../common/footer.jsp" />
 </body>
-
 </html>
