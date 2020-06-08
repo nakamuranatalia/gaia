@@ -123,16 +123,16 @@
                             <div class="dropdown-menu options_dropdown" aria-labelledby="dropdownMenu2">
                                 <form method="get" action="../../FrontController.do">
                             		<input type="hidden" name="command" value="CreateRecipeFormCommand">
-	                                <button class="dropdown-item back_drop text-white" type="submit">Create Recipes</button>
+	                                <button class="dropdown-item back_drop text-white" type="submit">Create Recycling Ideas</button>
                                 </form>
                                 <button class="dropdown-item back_drop" type="button">
                                     <a class="link_dropdown_button" href="recycling-ideas/recycling-ideas-update.jsp">
-                                       Update Recipes
+                                       Update Recycling Ideas
                                     </a>
                                 </button>
                                 <button class="dropdown-item back_drop" type="button">
                                     <a class="link_dropdown_button" href="recycling-ideas/recycling-ideas-delete.jsp">
-                                       Delete Recipes
+                                       Delete Recycling Ideas
                                     </a>
                                 </button>
                             </div>
