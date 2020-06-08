@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import br.com.gaia.model.RecycledMaterial;
 import br.com.gaia.service.RecycledMaterialService;
 
-public class CreateRecipeFormCommand implements Command{
+public class CreateIdeasFormCommand implements Command{
 
 	private List<RecycledMaterial> recycledMaterialList = new ArrayList<>();
 	private RecycledMaterialService service = new RecycledMaterialService();

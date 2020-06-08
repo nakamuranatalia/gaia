@@ -122,7 +122,7 @@
                             </button>
                             <div class="dropdown-menu options_dropdown" aria-labelledby="dropdownMenu2">
                                 <form method="get" action="../../FrontController.do">
-                            		<input type="hidden" name="command" value="CreateRecipeFormCommand">
+                            		<input type="hidden" name="command" value="CreateIdeasFormCommand">
 	                                <button class="dropdown-item back_drop text-white" type="submit">Create Recycling Ideas</button>
                                 </form>
                                 <button class="dropdown-item back_drop" type="button">
