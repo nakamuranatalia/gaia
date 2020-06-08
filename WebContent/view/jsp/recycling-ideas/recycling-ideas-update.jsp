@@ -16,7 +16,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-10 text-center">
                         <h3 class="text-uppercase font_black font-weight-bold">
-                            FILL THE FORM TO UPDATE AN EXISTING RECIPE
+                            FILL THE FORM TO SEARCH FOR AN EXISTING RECYLIGN IDEA AND UPDATE IT
                         </h3>
                         <hr class="divider border_light my-4" />
                     </div>
