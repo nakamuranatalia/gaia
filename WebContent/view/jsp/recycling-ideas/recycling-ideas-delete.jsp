@@ -30,7 +30,7 @@
                                     <input type="text" class="form-control border_light" id="inputCod" name="code" placeholder="100" required>
                                 </div>
                                 <div class="col-lg-12 text-center">
-									<input type="hidden" name="command" value="DeleteIdeaCommand">
+									<input type="hidden" name="command" value="DeleteIdeasCommand">
                                     <input type="submit" class="btn btn-gradient btn-find padding-btn" id="btn_find" value="DELETE">
                                 </div>
                         	</div>
