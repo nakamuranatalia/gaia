@@ -1,9 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
    <!-- Imports -->
    <jsp:include page="../common/imports.jsp" />
@@ -22,33 +20,27 @@
                         </h3>
                         <hr class="divider border_light my-4" />
                     </div>
-
                     <div class="col-lg-8 align-self-start">
-                        <form action="RecyclingIdeasUpdate.do" method="post">
+                        <form action="/gaia/FrontController.do" method="get">
                             <div class="form-row">
                                 <div class="form-group col-md-4">
                                 </div>
-
                                 <div class="form-group text-center">
                                     <label class="font_black" for="inputTitle">Title</label>
-                                    <input type="text" class="form-control border_light" id="inputTitle" name="title" placeholder="" required>
+                                    <input type="text" class="form-control border_light" id="inputTitle" name="title" placeholder="Jewl box" required>
                                 </div>
-
                                 <div class="col-lg-12 text-center">
-                                    <input type="submit" class="btn btn-gradient btn-find padding-btn" id="btn_find" value="REGISTER">
+                                	<input type="hidden" name="command" value="UpdateIdeasSearchCommand">
+                                    <input type="submit" class="btn btn-gradient btn-find padding-btn" id="btn_find" value="SEARCH">
                                 </div>
+                            </div>
                         </form>
                         </div>
-
                     </div>
                 </div>
-
             </div>
     </section>
 	<!-- Footer-->
     <jsp:include page="../common/footer.jsp" />
-
-
 </body>
-
 </html>
