@@ -75,7 +75,7 @@ public class RecycledMaterialDAO {
 			ResultSet result = pst.executeQuery();
 			RecycledMaterial recycledMaterial = new RecycledMaterial();
 			if (result.next()) {
-				recycledMaterial.setIdentifierCd(result.getInt("recycled_identifier_id"));
+				recycledMaterial.setIdentifierCd(result.getInt("recycled_material_identifier_cd"));
 				recycledMaterial.setName(name);
 			}
 			return recycledMaterial;
