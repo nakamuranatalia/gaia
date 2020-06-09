@@ -185,9 +185,9 @@ a {
 a:hover {
     color: #d6370c;
     text-decoration: underline;
-}
+} 
 
-a:not([href]) {
+ a:not([href]) {
     color: inherit;
     text-decoration: none;
 }
@@ -195,7 +195,7 @@ a:not([href]) {
 a:not([href]):hover {
     color: inherit;
     text-decoration: none;
-}
+} 
 
 pre,
 code,
@@ -665,9 +665,9 @@ pre code {
 }
 
 .link_dropdown_button:hover {
-    text-decoration: underline;
+    text-decoration: none; 
     color: #FFFFFF;
-}
+} 
 
 .back_drop {
     background: #83951c !important;
