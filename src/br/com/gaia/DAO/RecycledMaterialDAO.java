@@ -68,13 +68,11 @@ public class RecycledMaterialDAO {
 
 	public RecycledMaterial read(String name) {
 
-		String read = "SELECT * FROM recycled_material " + " WHERE recycled_name = ? ";
+		String read = "SELECT * FROM recycled_material WHERE recycled_material_name = ? ";
 
 		try (PreparedStatement pst = connection.prepareStatement(read)) {
-
 			pst.setString(1, name);
 			ResultSet result = pst.executeQuery();
-
 			RecycledMaterial recycledMaterial = new RecycledMaterial();
 			if (result.next()) {
 				recycledMaterial.setIdentifierCd(result.getInt("recycled_identifier_id"));
@@ -83,13 +81,10 @@ public class RecycledMaterialDAO {
 			return recycledMaterial;
 
 		} catch (SQLException ex) {
-
 			System.err.println("Error in the table recycled_material");
 			ex.printStackTrace();
-
 			return null;
 		}
-
 	}
 
 	public List<RecycledMaterial> readAll() {
