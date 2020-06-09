@@ -21,12 +21,13 @@
 						<hr class="divider border_light my-4" />
 					</div>
 					<div class="col-lg-8 align-self-start">
-						<form action="RecycledDelete.do" method="post">
+						<form action="/gaia/FrontController.do" method="post">
 							<div class="form-group text-center">
 								<label class="font_black" for="inputMaterialCod">Identifier code</label>
 								<input type="text" class="form-control border_light" id="inputMaterialCod" name="code" placeholder="" required>
 							</div>
 							<div class="col-lg-12 text-center">
+								<input type="hidden" name="command" value="DeleteMaterialCommand">
 								<input type="submit" class="btn btn-gradient btn-find padding-btn" id="btn_find" value="DELETE">
 							</div>
 						</form>
