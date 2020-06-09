@@ -111,6 +111,22 @@
 									Delete Recycling Ideas
 								</a>
 							</button>
+							<hr>
+							<button class="dropdown-item back_drop" type="button">
+								<a class="link_dropdown_button" href="/gaia/view/jsp/recycled-material/recycled-material-create.jsp">
+									Create Recycled Material
+								</a>
+							</button>
+							<button class="dropdown-item back_drop" type="button">
+								<a class="link_dropdown_button" href="/gaia/view/jsp/recycled-material/recycled-material-update.jsp">
+									Update Recycled Material
+								</a>
+							</button>
+							<button class="dropdown-item back_drop" type="button">
+								<a class="link_dropdown_button" href="/gaia/view/jsp/recycled-material/recycled-material-delete.jsp">
+									Delete Recycled Material
+								</a>
+							</button>
 						</div>
 					</div>
 				</li>
