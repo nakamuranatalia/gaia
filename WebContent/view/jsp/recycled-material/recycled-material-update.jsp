@@ -24,7 +24,7 @@
 						<form action="/gaia/FrontController.do" method="post">
 							<div class="form-group text-center">
 								<label class="font_black" for="inputMaterial">Recycled material name</label>
-								<input type="text" class="form-control" id="inputMaterial" name="name" placeholder="" required>
+								<input type="text" class="form-control" id="inputMaterial" name="name" placeholder="Niobium" required>
 							</div>
 							<div class="col-lg-12 text-center">
 								<input type="hidden" name="command" value="UpdateMaterialSearchCommand">
