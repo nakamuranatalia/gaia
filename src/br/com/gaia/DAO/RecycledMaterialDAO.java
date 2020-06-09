@@ -36,23 +36,19 @@ public class RecycledMaterialDAO {
 
 	public boolean update(RecycledMaterial recycledMaterial) {
 
-		String update = "UPDATE recycled_material " + "SET recycled_name = ?" + " WHERE recycled_identifier_id = ? ";
+		String update = "UPDATE recycled_material SET recycled_material_name = ?"
+				+ "WHERE recycled_material_identifier_cd = ?";
 
 		try (PreparedStatement pst = connection.prepareStatement(update)) {
-
 			pst.setString(1, recycledMaterial.getName());
 			pst.setInt(2, recycledMaterial.getIdentifierCd());
-
 			pst.execute();
-
+			return true;
 		} catch (SQLException ex) {
-
 			System.err.println("Error in the table recycled_material");
 			ex.printStackTrace();
 			return false;
 		}
-
-		return true;
 	}
 
 	public boolean delete(int identifier_id) {
