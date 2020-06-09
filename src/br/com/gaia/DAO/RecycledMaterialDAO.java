@@ -19,24 +19,19 @@ public class RecycledMaterialDAO {
 
 	public boolean create(RecycledMaterial recycledMaterial) {
 
-		String create = "INSERT INTO recycled_material " + " (recycled_identifier_id, recycled_name) "
+		String create = "INSERT INTO recycled_material (recycled_material_identifier_cd, recycled_material_name) "
 				+ " VALUES (?, ?) ";
 
 		try (PreparedStatement pst = connection.prepareStatement(create)) {
-
 			pst.setInt(1, recycledMaterial.getIdentifierCd());
 			pst.setString(2, recycledMaterial.getName());
-
 			pst.execute();
-
+			return true;
 		} catch (SQLException ex) {
-
 			System.err.println("Error in the table recycled_material");
 			ex.printStackTrace();
 			return false;
 		}
-
-		return true;
 	}
 
 	public boolean update(RecycledMaterial recycledMaterial) {
