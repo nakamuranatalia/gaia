@@ -23,6 +23,7 @@
                         <form action="/gaia/FrontController.do" method="post">
                         	 <div class="form-group text-center">
                                 <label class="font_black" for="inputCod">Identifier code: ${recyclingIdeasCd}</label>
+                                <input type="hidden" name="code" value="${recyclingIdeasCd}">
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-md-4">
