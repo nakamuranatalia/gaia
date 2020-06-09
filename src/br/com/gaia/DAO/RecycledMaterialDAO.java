@@ -53,23 +53,17 @@ public class RecycledMaterialDAO {
 
 	public boolean delete(int identifier_id) {
 
-		String delete = "DELETE FROM recycled_material " + " WHERE recycled_identifier_id = ? ";
+		String delete = "DELETE FROM recycled_material  WHERE recycled_material_identifier_cd = ? ";
 
 		try (PreparedStatement pst = connection.prepareStatement(delete)) {
-
 			pst.setInt(1, identifier_id);
-
 			pst.execute();
-
+			return true;
 		} catch (SQLException ex) {
-
 			System.err.println("Error in the table recycled_material");
 			ex.printStackTrace();
-
 			return false;
 		}
-
-		return true;
 	}
 
 	public RecycledMaterial read(String name) {
