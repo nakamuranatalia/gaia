@@ -10,7 +10,11 @@ public class RecycledMaterialService {
 	public RecycledMaterialDAO dao = new RecycledMaterialDAO();
 	
 	public boolean create(RecycledMaterial recycled) {
-		return dao.create(recycled);
+		if(recycled.getIdentifierCd()==0) {
+			return false;
+		}else {
+			return dao.create(recycled);
+		}
 	}
 	
 	public boolean delete(int recycled_identifier_cd) {
