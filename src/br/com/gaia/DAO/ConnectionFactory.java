@@ -15,7 +15,7 @@ public class ConnectionFactory {
 	   
 	   public static Connection getConnection(){
 	      try{
-	    	  return (Connection) DriverManager.getConnection("jdbc:mysql://localhost/gaia?user=naat&password=naat_123&useTimezone=true&serverTimezone=UTC");
+	    	  return (Connection) DriverManager.getConnection("jdbc:mysql://localhost/gaia?user=user&password=password&useTimezone=true&serverTimezone=UTC");
 	      } catch (SQLException e){
 	         e.printStackTrace();
 	      }
