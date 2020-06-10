@@ -10,14 +10,15 @@
 	<!-- Menu-->
 	<jsp:include page="../common/menu.jsp" />
 	<!-- Page -->
-	<section class="margin-t-93 padding-t-55 animate__animated animate__fadeIn" id="collection">
+	<section
+		class="margin-t-93 padding-t-55 animate__animated animate__fadeIn"
+		id="collection">
 		<div class="wrapper">
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-lg-10 text-center">
-						<h3 class="text-uppercase font_black font-weight-bold">
-							Enter your address to find the nearest collection point to you.
-						</h3>
+						<h3 class="text-uppercase font_black font-weight-bold">Enter
+							your address to find the nearest collection point to you.</h3>
 						<hr class="divider border_light my-4" />
 					</div>
 					<div class="col-lg-8 align-self-start">
@@ -36,26 +37,31 @@
 								</div>
 							</div> --%>
 							<div class="form-group text-center">
-								<label class="font_black" for="inputAddress">Address</label>
-								<input type="text" class="form-control border_light" id="inputAddress" name="address" placeholder="Street Rose Bushes" required>
+								<label class="font_black" for="inputAddress">Address</label> <input
+									type="text" class="form-control border_light" id="inputAddress"
+									name="address" placeholder="Street Rose Bushes" required>
 							</div>
 							<div class="form-group text-center">
 								<label class="font_black" for="inputAddress2">Neighborhood</label>
-								<input type="text" class="form-control border_light" id="inputAddress2" name="neighborhood" placeholder="Village Park" required>
+								<input type="text" class="form-control border_light"
+									id="inputAddress2" name="neighborhood"
+									placeholder="Village Park" required>
 							</div>
 							<div class="form-row text-center">
 								<div class="form-group col-md-6">
-									<label class="font_black" for="inputCity">City</label>
-									<input type="text" class="form-control border_light" id="inputCity" name="city" placeholder="New York" required>
+									<label class="font_black" for="inputCity">City</label> <input
+										type="text" class="form-control border_light" id="inputCity"
+										name="city" placeholder="New York" required>
 								</div>
 								<div class="form-group col-md-3 text-center">
-									<label class="font_black" for="inputEstado">State</label>
-									<select id="inputEstado" name="state" class="form-control border_light">
+									<label class="font_black" for="inputEstado">State</label> <select
+										id="inputEstado" name="state"
+										class="form-control border_light">
 										<option disabled selected>Select option</option>
-									 	<option value="AC">Acre</option>
+										<option value="AC">Acre</option>
 										<option value="AL">Alagoas</option>
 										<option value="AC">Amapá</option>
-									 	<option value="AM">Amazonas</option>
+										<option value="AM">Amazonas</option>
 										<option value="BA">Bahia</option>
 										<option value="CE">Ceará</option>
 										<option value="DF">Distrito Federal</option>
@@ -78,17 +84,19 @@
 										<option value="SC">Santa Catarina</option>
 										<option value="SP">São Paulo</option>
 										<option value="SE">Sergipe</option>
-									 	<option value="TO">Tocantins</option>
+										<option value="TO">Tocantins</option>
 									</select>
 								</div>
 								<div class="form-group col-md-3 text-center">
-									<label class="font_black" for="inputCEP">CEP</label>
-									<input type="text" class="form-control border_light" id="inputCEP" name="cep" placeholder="01234567" required>
+									<label class="font_black" for="inputCEP">CEP</label> <input
+										type="text" class="form-control border_light" id="inputCEP"
+										name="cep" placeholder="01234567" required>
 								</div>
 							</div>
 							<div class="col-lg-12 text-center">
 								<input type="hidden" name="command" value="MapCommand">
-								<button type="submit" class="btn btn-gradient btn-find padding-btn" id="btn_find">FIND</button>
+								<button type="submit"
+									class="btn btn-gradient btn-find padding-btn" id="btn_find">FIND</button>
 							</div>
 						</form>
 					</div>

@@ -16,7 +16,8 @@
 	<!-- Menu -->
 	<jsp:include page="../common/menu.jsp" />
 	<!-- Page -->
-	<section class="margin-t-93 padding-t-55 animate__animated animate__fadeIn">
+	<section
+		class="margin-t-93 padding-t-55 animate__animated animate__fadeIn">
 		<div class="wrapper">
 			<div class="container">
 				<c:forEach items="${addressList}" var="gaia">
@@ -28,10 +29,13 @@
 						<div class="col-lg-0 align-self-start">
 							<div class="form-row">
 								<div class="form-group text-center">
-									<p><b>Adress:</b> ${gaia.address}</p><br>
+									<p>
+										<b>Adress:</b> ${gaia.address}
+									</p>
+									<br>
 								</div>
 							</div>
-	                    </div>
+						</div>
 					</div>
 				</c:forEach>
 			</div>
